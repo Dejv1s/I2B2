@@ -41,9 +41,9 @@
     font-weight: 900;
   }
   .button3 {
-    background-color: #023258;
+    background-color: #105802;
     border: none;
-    color: white;
+    color: #105802;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -51,4 +51,19 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    transition: 0.5s;
+
+  }
+.button3:after {
+    content: 'Click me »';
+    opacity: 0;  
+    top: 14px;
+    right: 0px;
+    transition: 0.5s;
+  }
+  
+  
+.button3:hover:after {
+    opacity: 1;
+    color: #ffffff;
   }
